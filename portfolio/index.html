@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dabbeta Pranaya | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">Pranaya</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark/light mode">
+        <span class="mode-icon" id="modeIcon">
+          <!-- Moon SVG (default dark) -->
+          <svg id="moonIcon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5 13.5C16.5 14 15.5 14.25 14.5 14.25C11.0482 14.25 8.25 11.4518 8.25 8C8.25 6.5 8.75 5.25 9.5 4.25C6.5 4.75 4.25 7.25 4.25 10.25C4.25 13.7018 7.04822 16.5 10.5 16.5C13.5 16.5 16 14.5 17.5 13.5Z" fill="#e0e7ff" stroke="#00e5ff" stroke-width="1.5"/>
+          </svg>
+          <!-- Sun SVG (hidden by default) -->
+          <svg id="sunIcon" width="22" height="22" viewBox="0 0 22 22" fill="none" style="display:none;" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="5" fill="#FFD600" stroke="#FFEA00" stroke-width="1.5"/>
+            <g stroke="#FFD600" stroke-width="1.2">
+              <line x1="11" y1="1.5" x2="11" y2="4"/>
+              <line x1="11" y1="18" x2="11" y2="20.5"/>
+              <line x1="1.5" y1="11" x2="4" y2="11"/>
+              <line x1="18" y1="11" x2="20.5" y2="11"/>
+              <line x1="4.64" y1="4.64" x2="6.22" y2="6.22"/>
+              <line x1="15.78" y1="15.78" x2="17.36" y2="17.36"/>
+              <line x1="4.64" y1="17.36" x2="6.22" y2="15.78"/>
+              <line x1="15.78" y1="6.22" x2="17.36" y2="4.64"/>
+            </g>
+          </svg>
+        </span>
+      </button>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="profile-img-glow large">
+          <!-- Upload your profile photo as 'profilephoto.jpg' in the project folder -->
+          <img src="profilephoto.jpg" alt="Dabbeta Pranaya" class="profile-img large" />
+        </div>
+      </div>
+      <div class="hero-right">
+        <h1 class="hero-name">Dabbeta Pranaya</h1>
+        <h2 class="hero-title">AI/ML Enthusiast &amp; Full-Stack Developer</h2>
+        <p class="tagline">Crafting solutions that impact the real world.</p>
+        <div class="hero-about">
+          <p>
+            I’m a Computer Science student at VNRVJIET, passionate about AI, data, and building tech that matters.<br>
+            <span class="hero-bullet">•</span> Software Engineer Intern, Yugvatra Retail Pvt. Ltd.<br>
+            <span class="hero-bullet">•</span> Hackathon winner & design lead<br>
+            <span class="hero-bullet">•</span> Outreach organizer & NSS volunteer<br>
+            <span class="hero-bullet">•</span> Love blending creativity with code to solve real-world problems<br>
+            <span class="hero-bullet">•</span> <a href="https://www.linkedin.com/in/pranaya-patel-dabbeta-1a0019295/" target="_blank">LinkedIn</a> | <a href="https://github.com/Pranayadabbeta" target="_blank">GitHub</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="section about-section">
+    <div class="about-bio">
+      <h2>About Me</h2>
+      <p>I’m a Computer Science student at VNRVJIET with a passion for AI, data, and impactful tech solutions. I thrive in hackathons, lead design & outreach initiatives, and love building projects with real-world applications.</p>
+    </div>
+    <div class="about-education">
+      <h3>Education</h3>
+      <div class="education-cards">
+        <div class="education-card">
+          <span class="glow-icon">
+            <!-- Graduation Cap SVG -->
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#glow)">
+                <path d="M16 6L28 12L16 18L4 12L16 6Z" fill="#00e5ff"/>
+                <path d="M6 13V20C6 21.1046 10.4772 22 16 22C21.5228 22 26 21.1046 26 20V13" stroke="#3f51b5" stroke-width="2"/>
+              </g>
+              <defs>
+                <filter id="glow" x="-2" y="0" width="36" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+                  <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+            </svg>
+          </span>
+          <div>
+            <div class="degree-title">B.Tech in Computer Science</div>
+            <div class="degree-school">VNRVJIET, Hyderabad</div>
+            <div class="degree-year">2021 - 2025</div>
+          </div>
+        </div>
+        <!-- Add more cards if needed -->
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="section projects-section">
+    <h2 class="projects-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Farm to Table Web Platform</h3>
+        </div>
+        <p class="project-desc">Full-stack app connecting consumers to farmers with live tracking and payments.</p>
+        <div class="project-tech">Tech Stack: <span>React</span>, <span>Node.js</span>, <span>Express</span>, <span>MongoDB</span>, <span>Socket.io</span></div>
+        <button class="view-more-btn">View More</button>
+      </div>
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Loanlytic</h3>
+        </div>
+        <p class="project-desc">ML-driven platform to evaluate and visualize loan eligibility.</p>
+        <div class="project-tech">Tech Stack: <span>Python</span>, <span>Flask</span>, <span>scikit-learn</span>, <span>Plotly</span></div>
+        <button class="view-more-btn">View More</button>
+      </div>
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Ride Booking Application</h3>
+        </div>
+        <p class="project-desc">AI-based ride-sharing app with cost optimization and secure payments.</p>
+        <div class="project-tech">Tech Stack: <span>Flutter</span>, <span>Firebase</span>, <span>Python</span>, <span>Stripe API</span></div>
+        <button class="view-more-btn">View More</button>
+      </div>
+    </div>
+  </section>
+  <section id="experience" class="section experience-section">
+    <h2 class="experience-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-role">Design Team Member</div>
+          <div class="timeline-org">CSI &amp; ISTE</div>
+          <div class="timeline-duration">2022 – Present</div>
+          <div class="timeline-achievement">Designed banners/posters for tech events.</div>
+        </div>
+      </div>
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-role">Outreach Organizer</div>
+          <div class="timeline-org">Dept. of CSE</div>
+          <div class="timeline-duration">2022 – Present</div>
+          <div class="timeline-achievement">Led AI awareness and yoga campaigns.</div>
+        </div>
+      </div>
+      <div class="timeline-node">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-role">NSS Volunteer</div>
+          <div class="timeline-org">NSS</div>
+          <div class="timeline-duration">2022</div>
+          <div class="timeline-achievement">Led blood donation camp with record turnout.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="section skills-section">
+    <h2 class="skills-title">Skills &amp; Certifications</h2>
+    <div class="skills-cert-grid">
+      <!-- Left: Skills -->
+      <div class="skills-badges-col">
+        <h3>Skills</h3>
+        <div class="skills-badges-grid">
+          <div class="skill-badge">
+            <span>Python</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 92%"></div></div>
+          </div>
+          <div class="skill-badge">
+            <span>JavaScript</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-badge">
+            <span>R</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%"></div></div>
+          </div>
+          <div class="skill-badge">
+            <span>MERN Stack</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%"></div></div>
+          </div>
+          <div class="skill-badge">
+            <span>Figma</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 75%"></div></div>
+          </div>
+          <div class="skill-badge">
+            <span>Tableau</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 78%"></div></div>
+          </div>
+          <div class="skill-badge">
+            <span>Firebase</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%"></div></div>
+          </div>
+          <div class="skill-badge">
+            <span>Git</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%"></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Right: Certifications -->
+      <div class="certifications-col">
+        <h3>Certifications</h3>
+        <ul class="cert-list">
+          <li>
+            <span class="cert-icon cert-tableau">
+              <!-- Tableau SVG -->
+              <svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="13" fill="#e0e7ff"/><text x="14" y="19" text-anchor="middle" font-size="16" fill="#3f51b5" font-family="Orbitron,Arial">T</text></svg>
+            </span>
+            Tableau Desktop Specialist
+            <div class="cert-bar"><div class="cert-bar-fill" style="width: 90%"></div></div>
+          </li>
+          <li>
+            <span class="cert-icon cert-forage">
+              <!-- Tata Forage SVG -->
+              <svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="13" fill="#e0e7ff"/><text x="14" y="19" text-anchor="middle" font-size="16" fill="#512da8" font-family="Orbitron,Arial">F</text></svg>
+            </span>
+            Tata Forage Data Analytics
+            <div class="cert-bar"><div class="cert-bar-fill" style="width: 80%"></div></div>
+          </li>
+          <li>
+            <span class="cert-icon cert-uiux">
+              <!-- UI/UX SVG -->
+              <svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="13" fill="#e0e7ff"/><text x="14" y="19" text-anchor="middle" font-size="16" fill="#00e5ff" font-family="Orbitron,Arial">U</text></svg>
+            </span>
+            UI/UX Design
+            <div class="cert-bar"><div class="cert-bar-fill" style="width: 75%"></div></div>
+          </li>
+          <li>
+            <span class="cert-icon cert-talent">
+              <!-- Talent Unpark SVG -->
+              <svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="13" fill="#e0e7ff"/><text x="14" y="19" text-anchor="middle" font-size="16" fill="#3f51b5" font-family="Orbitron,Arial">TU</text></svg>
+            </span>
+            Talent Unpark Challenge
+            <div class="cert-bar"><div class="cert-bar-fill" style="width: 70%"></div></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="resume" class="section resume-section">
+    <h2 class="resume-title">Resume</h2>
+    <div class="resume-actions">
+      <!-- Upload your resume image as 'Resumeeee.jpg' in the project folder -->
+      <a class="resume-download-btn" href="Resumeeee.jpg" download target="_blank" rel="noopener">
+        <span class="resume-btn-icon">
+          <img src="Resumeeee.jpg" alt="Download Resume" style="width:40px;height:40px;border-radius:50%;object-fit:cover;vertical-align:middle;box-shadow:0 0 12px #43cea2;" />
+        </span>
+        Download Resume
+      </a>
+      <a class="linkedin-btn" href="https://www.linkedin.com/in/pranaya-patel-dabbeta-1a0019295/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <!-- LinkedIn SVG -->
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="16" fill="#e0e7ff"/>
+          <path d="M10.5 13.5V22H13.5V13.5H10.5ZM12 12C12.8284 12 13.5 11.3284 13.5 10.5C13.5 9.67157 12.8284 9 12 9C11.1716 9 10.5 9.67157 10.5 10.5C10.5 11.3284 11.1716 12 12 12ZM15.5 13.5V22H18.5V17.5C18.5 16.3954 19.3954 15.5 20.5 15.5C21.6046 15.5 22.5 16.3954 22.5 17.5V22H25.5V17C25.5 14.5147 23.4853 12.5 21 12.5C18.5147 12.5 16.5 14.5147 16.5 17V22H19.5V13.5H15.5Z" fill="#0077B5"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+  <section id="contact" class="contact-section">
+    <h2 class="contact-title">Contact</h2>
+    <form class="contact-form" id="contactForm" autocomplete="off" method="POST" action="https://formspree.io/f/mqalqlgb">
+      <div class="form-group">
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" rows="4" required placeholder="Type your message..."></textarea>
+      </div>
+      <button type="submit" class="send-btn">Send</button>
+      <div class="form-message" id="formMessage"></div>
+    </form>
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/pranaya-patel-dabbeta-1a0019295" class="footer-icon" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M4 4h20v20H4z" fill="none"/>
+            <path d="M8 12v8h4v-8H8zm2-2a2 2 0 110-4 2 2 0 010 4zm4 2v8h4v-4c0-2.21-2.69-2.04-2.69 0V20h-1.38v-8h1.38z" fill="#1da1f2"/>
+          </svg>
+        </a>
+        <a href="https://github.com/pranayadabbeta" class="footer-icon" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M14 2C7.373 2 2 7.373 2 14c0 5.302 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.606-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 013.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.654 1.653.243 2.873.12 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.804 5.625-5.475 5.921.43.37.823 1.102.823 2.222v3.293c0 .32.218.694.825.576C22.565 23.797 26 19.299 26 14c0-6.627-5.373-12-12-12z" fill="#fff"/>
+          </svg>
+        </a>
+      </div>
+      <div class="footer-info">
+        <span>Email: <a href="mailto:pranayadabbeta1803@gmail.com">pranayadabbeta1803@gmail.com</a></span>
+        <span>Contact: <a href="tel:+919912184745">+91-9912184745</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.3/dist/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
