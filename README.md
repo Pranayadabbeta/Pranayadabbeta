@@ -28,7 +28,7 @@ Coming soon on \*\*GitHub Pages\*\*
 
 Built with passion and precision.  
 
-Let’s connect on \[LinkedIn](https://www.linkedin.com/in/pranayadabbeta) or check out the code right here on GitHub.
+Let’s connect on \[LinkedIn](https://www.linkedin.com/in/pranaya-patel-dabbeta-1a0019295/) or check out the code right here on GitHub.
 
 > 💡 Feel free to fork, star, or suggest improvements!
 🔗 [Visit my portfolio](https://pranayadabbeta.github.io/Pranayadabbeta/)
